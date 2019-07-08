@@ -2,4 +2,8 @@
     <string name="app_name">FunEvent</string>
     <string name="brand_funevent">fun</string>
     <string name="event">event</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="get_started">Get Started</string>
+    <string name="textdesconboarding">TextView</string>
 </resources>
