@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">FunEvent</string>
+    <string name="brand_funevent">fun</string>
+    <string name="event">event</string>
 </resources>
