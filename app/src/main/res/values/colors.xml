@@ -3,4 +3,15 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <!--MAIN COLORS-->
+    <color name="mainColorBlue">#1672FF</color>
+    <color name="mainColorYellow">#FFB401</color>
+    
+    <!--COMPLIMENTARY COLORS-->
+    <color name="comOrange">#FC832D</color>
+    <color name="comGreen">#2CCF70</color>
+    <color name="comLightRed">#FF3688</color>
+    <color name="comGrey">#9C9DA8</color>
+
 </resources>
