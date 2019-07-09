@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_explore"
+        android:icon="@drawable/ic_map_marker"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_starred_event"
+        android:icon="@drawable/ic_star"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="" />
+</menu>

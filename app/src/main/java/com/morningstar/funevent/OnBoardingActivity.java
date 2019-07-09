@@ -65,7 +65,7 @@ public class OnBoardingActivity extends AppCompatActivity {
         final List<OnBoardingModel> mList = new ArrayList<>();
         mList.add(new OnBoardingModel("Welcome !","Funevent is an app for locals and visitors, \n that help everyone to find events and have \n a good time in the location around them",R.drawable.ic_event));
         mList.add(new OnBoardingModel("Search by Map","An easy and quick way to find nearby events",R.drawable.ic_map));
-        mList.add(new OnBoardingModel("Interest & Activity","See what you like and the daily activities of Fajar Maulana",R.drawable.ic_map));
+        mList.add(new OnBoardingModel("Select & Go","Just select event, give a bookmark and you ready to go !",R.drawable.ic_travelling));
 
         // setup viewpager
         screenPager =findViewById(R.id.screenViewpager);

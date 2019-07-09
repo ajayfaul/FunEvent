@@ -6,4 +6,7 @@
     <string name="skip">Skip</string>
     <string name="get_started">Get Started</string>
     <string name="textdesconboarding">TextView</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Home fragment</string>
 </resources>
