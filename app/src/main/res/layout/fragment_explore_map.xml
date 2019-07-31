@@ -1,15 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.ExploreMapFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    android:background="@android:color/white">
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Explore Fragment"
-        android:gravity="center"/>
+        android:layout_height="match_parent">
 
-</FrameLayout>
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:orientation="horizontal"
+            android:background="@color/mainColorBlue"
+            android:weightSum="10">
+
+            <ImageView
+                android:id="@+id/btn_search"
+                android:layout_gravity="center"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_weight="2"
+                android:src="@drawable/ic_search_black_24dp"/>
+
+            <EditText
+                android:id="@+id/txt_cari"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:layout_gravity="center"
+                android:textSize="22dp"
+                android:hint="Search Event"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:backgroundTint="@android:color/white"/>
+
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recylerViewEvent"
+            android:layout_below="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
