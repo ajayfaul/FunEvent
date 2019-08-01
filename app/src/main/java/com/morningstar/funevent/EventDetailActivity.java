@@ -52,7 +52,7 @@ public class EventDetailActivity extends AppCompatActivity {
 
 
         Glide.with(this)
-                .load("https://kostlab.id/project/fajarm/xfile/gambar/"+gambar)
+                .load("http://funeventapps.000webhostapp.com/xfile/gambar/"+gambar)
                 .apply(new RequestOptions().override(100,100).centerCrop())
                 .into(gambarp);
 

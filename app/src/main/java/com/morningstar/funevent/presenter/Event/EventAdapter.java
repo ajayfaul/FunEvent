@@ -3,19 +3,20 @@ package com.morningstar.funevent.presenter.Event;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
+
+import java.util.List;
 import com.morningstar.funevent.R;
 import com.morningstar.funevent.model.ResultEvent;
 
-import java.util.List;
 
 public class EventAdapter extends RecyclerView.Adapter<EventViewHolder> {
-
 
     private Context context;
     private List<ResultEvent> resultEventList;
@@ -34,12 +35,9 @@ public class EventAdapter extends RecyclerView.Adapter<EventViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull EventViewHolder eventViewHolder, int i) {
         ResultEvent resultEvent = resultEventList.get(i);
-
         eventViewHolder.tv_nama_event.setText(resultEvent.getNama_event());
-        eventViewHolder.tv_tanggal_mulai.setText(resultEvent.getTanggal_mulai());
-        eventViewHolder.tv_lokasi.setText(resultEvent.getKota());
         Glide.with(context)
-                .load("https://kostlab.id/project/fajarm/xfile/gambar/"+resultEvent.getGambar())
+                .load("http://funeventapps.000webhostapp.com/xfile/gambar/"+resultEvent.getGambar())
                 .apply(new RequestOptions().override(100,100).centerCrop())
                 .into(eventViewHolder.img_event);
         eventViewHolder.setItem(resultEventList);
@@ -50,3 +48,4 @@ public class EventAdapter extends RecyclerView.Adapter<EventViewHolder> {
         return resultEventList.size();
     }
 }
+

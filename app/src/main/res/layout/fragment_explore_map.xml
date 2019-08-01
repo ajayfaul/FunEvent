@@ -42,7 +42,7 @@
         </LinearLayout>
 
         <android.support.v7.widget.RecyclerView
-            android:id="@+id/recylerViewEvent"
+            android:id="@+id/recyclerViewEvent"
             android:layout_below="@+id/header"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">

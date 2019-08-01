@@ -34,8 +34,8 @@ public class ExploreMapFragment extends Fragment {
     @BindView((R.id.txt_cari))
     EditText editText;
 
-    @BindView(R.id.recylerViewEvent) RecyclerView recyclerViewEvent;
-    private final static String base_url = "https://kostlab.id/project/fajarm/api/";
+    @BindView(R.id.recyclerViewEvent) RecyclerView recyclerViewEvent;
+    private final static String base_url = "http://funeventapps.000webhostapp.com/api/";
     Call<EventModel> call;
     @Nullable
     @Override
@@ -44,10 +44,10 @@ public class ExploreMapFragment extends Fragment {
         ButterKnife.bind(this, myFragmentsView);
 
         loadData(null);
-        //Setting recyclerView
-//        recyclerView = myFragmentsView.findViewById(R.id.recylerViewHero);
-//        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false);
-//        recyclerView.setLayoutManager(layoutManager);
+
+        recyclerViewEvent = myFragmentsView.findViewById(R.id.recyclerViewEvent);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false);
+        recyclerViewEvent.setLayoutManager(layoutManager);
 
         return myFragmentsView;
 

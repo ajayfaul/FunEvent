@@ -21,12 +21,8 @@ import butterknife.OnClick;
 public class EventViewHolder extends RecyclerView.ViewHolder {
     @BindView(R.id.img_event)
     ImageView img_event;
-    @BindView(R.id.tv_tanggal_mulai)
-    TextView tv_tanggal_mulai;
     @BindView(R.id.tv_nama_event)
     TextView tv_nama_event;
-    @BindView(R.id.tv_lokasi)
-    TextView tv_lokasi;
 
     private List<ResultEvent> resultEventList = new ArrayList<>();
 

@@ -21,11 +21,25 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         super.onCreate(savedInstanceState);
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         setContentView(R.layout.activity_main);
-
         BottomNavigationView navView = findViewById(R.id.navigation_view);
         navView.setOnNavigationItemSelectedListener(this);
+        String source;
+        if(savedInstanceState==null){
+            Bundle extras=getIntent().getExtras();
+            if(extras==null){
+                source=null;
+            }else{
+                source=extras.getString("source");
+            }
+        }else{
+            source=(String) savedInstanceState.getSerializable("source");
+        }
+        if(source!=null){
+            loadFragment(new ExploreMapFragment());
+        }else{
+            loadFragment(new HomeFragment());
 
-        loadFragment(new HomeFragment());
+        }
     }
 
     void loadFragment(Fragment fragment) {
